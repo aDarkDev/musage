@@ -5,7 +5,7 @@ A real-time memory measurement tool for monitoring memory usage during program e
 
 ## installation:
 ```bash
-wget https://github.com/aDarkDev/musage/releases/download/v0.1/musage-linux; mv musage-linux /usr/bin/musage; chmod +x musage
+wget https://github.com/aDarkDev/musage/releases/download/v0.1/musage-linux; mv musage-linux /usr/bin/musage; chmod +x /usr/bin/musage
 ```
 
 ## usage:
