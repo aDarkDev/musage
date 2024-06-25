@@ -92,7 +92,8 @@ func main() {
 
 	torun := strings.Join(os.Args[1:], " ")
 	cmd := exec.Command("bash", "-c", torun)
-	cmd.Start()
+	go cmd.Run()
+	time.Sleep(200*time.Millisecond)
 	go memory_writer(cmd.Process.Pid, torun)
 	cmd.Wait()
 }
